@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/f1c283d95c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Anandu Babu</title>
+    <script>
+        var toggler = 0;
+        window.onresize = () => {
+            console.log('resized')
+        }
+        function displayNav() {
+            if (toggler == 0) {
+                document.getElementById('nav-items').style.display = 'flex'
+                document.getElementById('toggle-menu').style.display = 'none'
+                toggler = 1
+            } else {
+
+                document.getElementById('nav-items').style.display = 'none'
+                document.getElementById('toggle-menu').style.display = 'block'
+                toggler = 0
+            }
+        }
+        function closeNav() {
+            if (toggler == 1) {
+                document.getElementById('nav-items').style.display = 'none'
+                document.getElementById('toggle-menu').style.display = 'block'
+                toggler = 0
+            } else {
+
+                document.getElementById('nav-items').style.display = 'block'
+                document.getElementById('toggle-menu').style.display = 'none'
+                toggler = 1
+            }
+        }
+    
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" id="root">
+        <nav>
+            <img src=Assets/Log-horizondal.png alt="" class=logo-horizondal>
+            <div id=toggle-menu onclick=displayNav()>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id=nav-items class=nav-items-list>
+                <li id=t-close onclick=closeNav()>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li class=nav-item><a href="index.html" class=nav-link> Home </a></li>
+                <li class=nav-item><a href='works.html' class=nav-link> Works </a></li>
+                <li class=nav-item><a class=nav-link href='contact.html'> Contact </a></li>
+            </ul>
+        </nav>
+
+        <header class="row works-header">
+            <div class="col">
+                <h1>Check out some of my works</h1>
+                <a href="https://anandubabucj7.github.io/me/web/index.html">
+                    <button>
+                        Quick links 
+                    </button>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="row works-sets">
+                <div class="works-set-title">
+                    <h3>Designs</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/pncnie.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Prajyoti Nite</h5>
+                                <p class="card-text">National Art event</p>
+                                <div class="badge badge-primary">Posters</div>
+                                <div class="badge badge-primary">Logo</div>
+                                <div class="badge badge-primary">Website</div>
+                               <br> <a href="https://drive.google.com/drive/folders/1LmX1MA-1skJQN6KP5I0g3oFlCYoyWZ6I?usp=sharing"
+                                    class="btn btn-warning">See more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/max.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Digimattazz</h5>
+                                <p class="card-text">Inter collage IT fest .</p>
+                                <div class="badge badge-primary">Posters</div>
+                                <div class="badge badge-primary">Website</div>
+                                <br>
+                               <br> <a href="https://drive.google.com/drive/folders/1xUu88EqdAQK3MvrnfZXbx5oYFkn4UAJi?usp=sharing"
+                            class="btn btn-warning">See more</a>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/dream.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Dream Travels</h5>
+                                <p class="card-text">Travel agencie</p>
+                                <div class="badge badge-primary">Card</div>
+                                <div class="badge badge-primary">Brochure</div>
+
+                                <br>
+                               <br> <a href="https://drive.google.com/drive/folders/1eMgSY62Ykfua9jpGO3TutPki2n7yW8st?usp=sharing"
+                                class="btn btn-warning">See more</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/codebaselogo.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Code Base</h5>
+                                <p class="card-text">Personal Works for skill development</p>
+                                <div class="badge badge-primary">Poster</div>
+                                <div class="badge badge-primary">Cards</div>
+                                <div class="badge badge-primary">Walpepers</div>
+                                <div class="badge badge-primary"></div>
+                               <br> <a href="https://drive.google.com/drive/folders/1dBHIQvlYRlTHlQkbuwha0diuSciH9wMJ?usp=sharing"
+                            class="btn btn-warning">See more</a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row works-sets">
+                <div class="works-set-title">
+                    <h3>Web sites</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/vedha.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Vedha Creations</h5>
+                                <p class="card-text">WordPress Website</p>
+                               <br> <a href="https://vedhacreations.wordpress.com/" class="btn btn-warning">Visit site</a>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/mini.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">DevNotes App</h5>
+                                <p class="card-text">Fullstack web application based on MERN stack and MUI.</p>
+                               <br> <a href="https://codebasedevnotes.netlify.app/" class="btn btn-warning">Visit site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/max.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Digimattazz</h5>
+                                <p class="card-text">Inter college IT fest.</p>
+                               <br> <a href="https://anandubabucj7.github.io/me/web/digimatazz/"
+                                    class="btn btn-warning">Visitsite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/mini.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Some Mini projects</h5>
+                                <p class="card-text">coding for practice</p>
+                               <br> <a href="https://anandubabucj7.github.io/me/web/index.html" class="btn btn-warning">Visit site</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="quote"><q>I am something else nothing more </q></div>
+
+            </div>
+            <div class="col-sm">
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/anandu-babucj7/" class="social-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AnanduBabucj7" class="social-links">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/Anandubabucj7" class="social-links">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="mailto: anandubabu.kr@gmail.com" class="social-links">
+                        <i class="fas fa-envelope-open"></i>
+                    </a>
+                </div>
+                <div class="user-id">
+                    <p>anandubabucj7</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col copy-right">
+                <p> Designed and developed by Anandu Babu &copy; CodeBase </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

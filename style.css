@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box
+}
+
+#root {
+    background-image: url(Assets/Background-logo.png);
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: #000;
+    overflow: hidden
+}
+
+.header-part {
+    padding: 1rem 2rem 2rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Oswald, sans-serif
+}
+
+button {
+    border: 0;
+    background-color: #ff9100;
+    color: #fff;
+    padding: 10px 1rem;
+    border-radius: 4px;
+    margin-top: 3rem;
+    font-weight: 1000;
+    color: #f0f8ff;
+}
+
+
+#logo {
+    max-width: 30rem;
+    height: auto
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem 2rem 2rem
+}
+
+.logo-horizondal {
+    max-width: 7rem;
+    height: auto;
+    animation: logoanimation 5s infinite linear ease-in-out
+}
+
+@keyframes logoanimation {
+    0% {
+        width: 0;
+        display: none;
+        background-color: red
+    }
+
+    10% {
+        width: auto
+    }
+}
+
+ul {
+    list-style-type: none
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+#t-close {
+    display: none
+}
+
+.nav-item {
+    float: left
+}
+
+.nav-item a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+    color: #000
+}
+
+.nav-item a:hover {
+    background-color: #fff
+}
+
+#t-close, #toggle-menu {
+    min-width: 3rem;
+    height: 100%;
+    flex-flow: column;
+    justify-content: space-between;
+    display: none
+}
+
+#t-close span, #toggle-menu span {
+    height: 3px;
+    display: block;
+    background-color: #2c40fa;
+    width: 2rem;
+    padding: 3px;
+    border-radius: 4px;
+    margin: 0
+}
+
+#toggle-menu span:nth-child(2) {
+    margin: 5px 5px 5px -5px
+}
+
+#t-close span:nth-child(2) {
+    margin: 5px -5px 5px 5px
+}
+
+main {
+    padding-top: 2rem
+}
+
+.intro-section {
+    background-color: #2c40fa
+}
+
+.intro {
+    background-color: #2c40fa;
+    padding-left: 6rem;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+img[alt=my-pic] {
+    border-radius: 50%
+}
+
+.intro-text {
+    padding: 2rem 2rem 0 2rem;
+    color: #f0f8ff;
+    justify-content: center;
+    align-items: center
+}
+
+.about-me {
+    background-color: #ff9100;
+    min-height: 70vh;
+    justify-content: center
+}
+
+b, h4 {
+    font-weight: 800
+}
+
+i {
+    color: #2c40fa;
+    margin-bottom: .5rem
+}
+
+.showcase {
+    padding: 4rem 6rem 0 6rem;
+    min-height: 50vh
+}
+
+.skill-set {
+    display: flex;
+    flex-flow: column;
+    text-align: center
+}
+
+.skill-items {
+    text-align: center
+}
+
+.skill-item {
+    display: inline-block;
+    padding: .5rem;
+    border-radius: 5px;
+    color: #f0f8ff;
+    background-color: #2c40fa;
+    margin: .2rem
+}
+
+.skill-item:hover {
+    background-color: brown
+}
+
+footer {
+    background-color: #121234;
+    color: #f0f8ff;
+    min-height: 20px;
+    padding: 1rem 2rem 2rem 2rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    overflow: hidden
+}
+
+.quote {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.user-id {
+    width: 100%;
+    text-align: center
+}
+
+.links {
+    margin-top: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around
+}
+
+.links i {
+    color: #ff9100
+}
+
+.thanks {
+    background-color: #ff9100;
+    padding: 1rem;
+    margin: 1rem
+}
+
+.thanks button {
+    margin-top: 0
+}
+
+.works-header {
+    padding: 2rem
+}
+
+.works-sets {
+    padding: 1rem 4rem 1rem 4rem
+}
+
+.card-text {
+    color: #000
+}
+
+h3 {
+    display: inline-block;
+    color: #000;
+    padding-left: .3rem;
+    font-weight: 600;
+    border-left: .6rem solid #ff9100
+}
+
+.contacts {
+    padding: 4rem;
+    text-align: center
+}
+
+.contact-item {
+    padding: 1rem
+}
+
+@media only screen and (max-width:800px) {
+    .header-part {
+        padding: 0
+    }
+
+    .intro {
+        padding-left: 2rem
+    }
+
+    .showcase {
+        padding: 2rem 0 0 0
+    }
+
+    .skill-set {
+        padding: 1rem
+    }
+}
+
+.copy-right {
+    text-align: center;
+    font-size: .7rem;
+    color: #ddd
+}
+
+@media only screen and (max-width:600px) {
+    #root {
+        background-size: cover;
+        background-repeat: repeat-y;
+        padding: 1rem
+    }
+
+    .header-part {
+        height: 75vh
+    }
+
+
+    nav {
+        margin: 1rem .2rem .2rem .2rem;
+        margin-top: 1rem;
+    }
+
+    nav .container-fluid {
+        padding: 0
+    }
+
+    .logo-horizondal {
+        max-width: 6rem
+    }
+
+    #t-close, #toggle-menu {
+        display: flex;
+        align-items: center
+    }
+
+    #nav-items {
+        display: none;
+        flex-flow: column;
+        justify-content: space-around;
+        position: absolute;
+        min-height: 50vh;
+        min-width: 50%;
+        z-index: 10;
+
+        background-color: #fff;
+        right: 0;
+        top: 1rem;
+        transition: .6s ease-in
+    }
+
+    .main-logo {
+        display: none
+    }
+
+    i {
+        color: #ff9100
+    }
+
+    .skill-set, main {
+        margin: 0;
+        padding: 2rem 0;
+        color: #f0f8ff
+    }
+
+    main {
+        border-radius: 10px
+    }
+
+    .skill-set {
+        padding: 2rem;
+        background-color: #fff;
+        color: #000;
+        font-size: 1rem;
+        border: 0;
+        border-bottom: 6px solid #ff9100;
+        border-radius: 3px
+    }
+
+    .intro-section {
+        background-color: transparent
+    }
+
+    .about-me, .intro {
+        min-height: 50vh;
+        border-radius: 20px;
+        padding: 1rem 1rem 3rem 1rem
+    }
+
+    .about-me {
+        background-color: #ff9100;
+        margin: -4rem 1rem 0 1rem
+    }
+
+    .about-me i {
+        color: #2c41fd
+    }
+
+    .showcase {
+        padding: 2rem 0 0 0
+    }
+
+    .works-sets {
+        padding: 1rem
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .intro {
+        min-height: 70vh;
+        flex-flow: column
+    }
+
+    .about-me {
+        margin: -3rem 1rem 0 1rem
+    }
+}

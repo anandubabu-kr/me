@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/f1c283d95c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Anandu Babu</title>
+    <script>
+        var toggler = 0;
+        window.onresize = () => {
+            console.log('resized')
+        }
+        function displayNav() {
+            if (toggler == 0) {
+                document.getElementById('nav-items').style.display = 'flex'
+                document.getElementById('toggle-menu').style.display = 'none'
+                toggler = 1
+            } else {
+
+                document.getElementById('nav-items').style.display = 'none'
+                document.getElementById('toggle-menu').style.display = 'block'
+                toggler = 0
+            }
+        }
+        function closeNav() {
+            if (toggler == 1) {
+                document.getElementById('nav-items').style.display = 'none'
+                document.getElementById('toggle-menu').style.display = 'block'
+                toggler = 0
+            } else {
+
+                document.getElementById('nav-items').style.display = 'block'
+                document.getElementById('toggle-menu').style.display = 'none'
+                toggler = 1
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="conatainer-fluid" id="root">
+        <nav>
+            <img src="Assets/Log-horizondal.png" alt="" class="logo-horizondal">
+            <div id="toggle-menu" onclick="displayNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id='nav-items' class="nav-items-list">
+                <li id="t-close" onclick="closeNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link"> Home </a></li>
+                <li class="nav-item"><a href="works.html" class="nav-link"> Works </a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+        <header class="row works-header">
+            <div class="col">
+                <h1>Get in touch with me :</h1>
+            </div>
+        </header>
+        <main class="row contacts">
+
+            <section class="column contact-item">
+                <a href="https://www.linkedin.com/in/anandu-babucj7/" class="social-links">
+                    <i class="fab fa-linkedin fa-2x"></i> <br>
+                    @anandu-babucj7
+                </a>
+
+            </section>
+            <section class="column contact-item">
+                <a href="https://github.com/AnanduBabucj7" class="social-links">
+                    <i class="fab fa-github fa-2x"></i>
+                    <br>
+                    @AnanduBabucj7
+                </a>
+            </section>
+            <section class="column contact-item">
+                <a href="https://twitter.com/Anandubabucj7" class="social-links">
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                    <br> @Anandubabucj7
+                </a>
+            </section>
+            <section class="column contact-item">
+                <a href="mailto: anandubabu.kr@gmail.com" class="social-links">
+                    <i class="fas fa-envelope-open fa-2x"></i>
+                    <br> anandubabu.sd@gmail.com
+                </a>
+            </section>
+            <section class="column contact-item">
+                <a href="https://www.sololearn.com/profile/11587910" class="social-links">
+                    <i class="fas fa-sun fa-2x"></i>
+                    <br> Aanandu Babu
+                </a>
+            </section>
+        </main>
+    </div>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="quote"><q>I am something else nothing more </q></div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col copy-right">
+                <p> Designed and developed by Anandu Babu &copy; CodeBase </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

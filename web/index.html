@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Home</title>
+    <script>
+        var toggler = 0;
+        window.onresize = () => {
+            console.log('resized')
+        }
+        function displayNav() {
+            if (toggler == 0) {
+                document.getElementById('nav-items').style.display = 'flex'
+                document.getElementById('toggle-menu').style.display = 'none'
+                toggler = 1
+            } else {
+
+                document.getElementById('nav-items').style.display = 'none'
+                document.getElementById('toggle-menu').style.display = 'block'
+                toggler = 0
+            }
+        }
+        function closeNav() {
+            if (toggler == 1) {
+                document.getElementById('nav-items').style.display = 'none'
+                document.getElementById('toggle-menu').style.display = 'block'
+                toggler = 0
+            } else {
+
+                document.getElementById('nav-items').style.display = 'block'
+                document.getElementById('toggle-menu').style.display = 'none'
+                toggler = 1
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <img src="Assets/Log-horizondal.png" alt="" class="logo-horizondal">
+        <div id="toggle-menu" onclick="displayNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id='nav-items' class="nav-items-list">
+            <li id="t-close" onclick="closeNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+            <li class="nav-item"><a href="../index.html" class="nav-link"> Home </a></li>
+            <li class="nav-item"><a href="/../works.html" class="nav-link"> Works </a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <h1>
+
+        Visit sites
+    </h1>
+    <div class="container">
+      
+        <a href="https://anandubabucj7.github.io/me/web/webubuntu/">
+
+            Webubuntu - UI clone
+        </a>
+
+        <a href="https://anandubabucj7.github.io/me/web/Varaluae/">
+            Varaluae - Assignement
+
+        </a>
+        <a href="https://anandubabucj7.github.io/me/web/grids/">
+
+            Photo gallery - Grids
+
+        </a>
+
+        <a href="https://anandubabucj7.github.io/me/web/app.html">
+            Todo App - Angular
+        </a>
+        <a href="https://anandubabucj7.github.io/me/web/EASYCHAT/index.html">
+            Bubbles
+        </a>
+        <a href="https://anandubabucj7.github.io/me/web/2k21/index.html">
+            2K21
+        </a>
+        <a href="https://anandubabucj7.github.io/me/web/digimatazz/">
+            Digimatazz
+        </a>
+        <a href="https://anandubabucj7.github.io/me/web/javascript/">
+            javascript
+
+        </a>
+    </div>
+</body>
+
+</html>
