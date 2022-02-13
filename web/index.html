@@ -8,57 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
     <title>Home</title>
-    <script>
-        var toggler = 0;
-        window.onresize = () => {
-            console.log('resized')
-        }
-        function displayNav() {
-            if (toggler == 0) {
-                document.getElementById('nav-items').style.display = 'flex'
-                document.getElementById('toggle-menu').style.display = 'none'
-                toggler = 1
-            } else {
-
-                document.getElementById('nav-items').style.display = 'none'
-                document.getElementById('toggle-menu').style.display = 'block'
-                toggler = 0
-            }
-        }
-        function closeNav() {
-            if (toggler == 1) {
-                document.getElementById('nav-items').style.display = 'none'
-                document.getElementById('toggle-menu').style.display = 'block'
-                toggler = 0
-            } else {
-
-                document.getElementById('nav-items').style.display = 'block'
-                document.getElementById('toggle-menu').style.display = 'none'
-                toggler = 1
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <nav>
-        <img src="Assets/Log-horizondal.png" alt="" class="logo-horizondal">
-        <div id="toggle-menu" onclick="displayNav()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul id='nav-items' class="nav-items-list">
-            <li id="t-close" onclick="closeNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </li>
-            <li class="nav-item"><a href="../index.html" class="nav-link"> Home </a></li>
-            <li class="nav-item"><a href="/../works.html" class="nav-link"> Works </a></li>
-            <li class="nav-item"><a class="nav-link" href="../contact.html"> Contact </a></li>
-        </ul>
-    </nav>
+
     <h1>
 
         Visit sites
@@ -95,6 +48,10 @@
         <a href="https://anandubabucj7.github.io/me/web/javascript/">
             javascript
 
+        </a>
+        <a href="https://anandubabu.netlify.app/">
+            <img src="../Assets/codebaselogo.png" alt="CodeBase" srcset="">
+            <p>Back to portfolio </p>
         </a>
     </div>
 </body>
