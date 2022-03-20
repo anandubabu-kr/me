@@ -10,7 +10,7 @@ body, html {
 }
 
 .conatainer {
-    padding: 3rem;
+    padding: 4rem;
     background-color: aliceblue;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -48,13 +48,11 @@ li a {
     text-align: center;
     padding: 12px 14px;
     text-decoration: none;
-    border-radius: 5px;
     transition: .4s ease-in-out;
 }
 
 li a:hover:not(.active) {
-    background-color: #525ded;
-    color: aliceblue;
+    border-bottom: 2px solid #525ded;
 }
 
 .active {
@@ -66,19 +64,31 @@ li a:hover:not(.active) {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
+    height: 30px;
 }
 
 .search-bar>.serach-inp{
+    border: 2px solid #525ded;
+    border-radius: 30px;
+    min-width: 250px;
+    height: 100%;
     left: 0px;
     padding: 0px;
-    border-radius: 5px;
+    margin: 0px;
     color: #525ded;
-    border: 2px solid #525ded;
+    display: flex;
+}
+.lens-icon{
+    color: #525ded;
+    margin-right: .5rem;
+    
 }
 input{
-    border: 0px;
     margin: 0px;
-    width: max-content;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
     background-color: aliceblue;
 }
 .nav-toggle-menu{
@@ -224,6 +234,7 @@ a {
 
 .services {
     max-width: 300px;
+    margin: 2.5rem;
     /* padding: 1em; */
 }
 
@@ -264,7 +275,7 @@ a {
 footer{
     background-color: rgb(70, 70, 80);
     font-family: 'Noto Sans', sans-serif;
-    padding: 1rem;
+    padding: 2rem;
     /* font-weight:600; */
     color: #f0f8ff;
 
@@ -272,8 +283,8 @@ footer{
 
 .footer-details{
     display: flex;
-justify-content: space-between;
-padding: 2rem;
+justify-content: space-around;
+padding: 1rem;
 
 }
 .div-column{
@@ -368,9 +379,10 @@ address{
 .inp{
     display: flex;
 }
-.foo-inp>input,.send{
+
+.inp>input,.send{
     height: 50px;
-    
+    border-radius: 0px;
     background-color:#fff;
     display: inline;
     margin: 0px;
@@ -403,12 +415,12 @@ address{
     .search-bar>.serach-inp{
         width: 100%;
         padding: 0px;
-        border-radius: 5px;
+        height: 30px;
+        border-radius: 30px;
         border: 2px solid #525ded;
     }
     input{
-        border: 0px;
-
+        border: none;
         background-color: aliceblue;
     }
     nav {
@@ -490,4 +502,8 @@ address{
         justify-content: center;
         align-items: center;
     }
+}
+.porfolio-link{
+    text-decoration: underline;
+    color: #f0f8ff;
 }

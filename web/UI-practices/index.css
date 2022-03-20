@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+html{
+    scroll-behavior: smooth;
+    padding: 0rem;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    padding: 0rem;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1,h2,h3{
+    font-weight: 900;
+}
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+nav,header{
+    padding: 2rem;
+}
+section{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 5px solid red;
+    width: 100%;
+}
+.in-link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: cornsilk;
+    color: black;
+} 
+
+/* SETCTION 1 image overlay */
+.image-overlayer{
+    margin: auto;
+    width: 300px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+.image-overlayer img{
+    width: 100%;
+    height: auto;
+}
+.img-overlay{
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0;
+    transition: .7s ease-in-out;
+    text-align: center;
+    background-color: rgb(240, 255, 255);
+}
+.image-overlayer:hover .img-overlay {
+    opacity: .7;
+    height: 100%;
+}
+
+/* SECTION 2 text underline */
+.crazy-text{
+    background-image: linear-gradient(90deg,red,blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: .5s ease-in-out;
+    font-weight: 900;
+}
+.crazy-text:hover{
+    background-size: 100% 3px;
+}
+
+/* SECTION 3 text shadow */
+.crazy-shadow{
+    font-size: xx-large;
+    text-shadow: 
+    .025em .025em 0 yellow,
+    .05em .05em 0 red,
+    .1em .1em 0 black
+    ;
+}
+.crazy-gradient{
+    font-size: xx-large;
+    background-image: linear-gradient(90deg,red,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.crazy-img{
+    font-size: xx-large;
+    background-image: url('sh.jpg');
+    background-size: cover;
+    background-position: bottom;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.div-marginer{
+    width: 100%;
+    outline: 2px solid red;
+    height: 100px;
+    display: flex;
+
+}
+.margin-it{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border:1px solid blue;
+}
+
+.outlines{
+    background-color:blue;
+    border: 0px;
+    padding: 1rem;
+    outline: 3px solid blue;
+    outline-offset: .2em ;
+}
+
+/* zoom */
+
+.img-zoomer{
+    width: 300px;
+    height:200px;
+    background-color: #fff;
+    position: relative;
+}
+.img-zoomer p{
+    background-color: violet;
+    width: 100%;
+    height: 100%;
+}
+.zoom-img{
+    width: 100%;
+    position: absolute;
+    height: auto;
+    /* top: 0px; */
+    bottom: 0px;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+}
+.img-zoomer:hover .zoom-img{
+    transform: scale(1);
+}
+
+/*  glasss  */
+
+.glasser{
+    background-color:rgb(68, 1, 68);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   position: relative;
+    filter: blur(4);
+    padding: 1rem;
+}
+
+.glasser::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(red,blue);
+    top: 0px;
+    left: 0px;
+    clip-path: circle(30% at 20% 20%);
+    width: 100%;
+    height: 100%;
+}
+.glasser::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(blue,red);
+    bottom: 0px;
+    right: 0px;
+    clip-path: circle(30%  at right 70%);
+    width: 100%;
+    height: 100%;
+}
+.glass{
+    position: relative;
+    color: white;
+    box-sizing: border-box;
+    padding: 2rem;
+    z-index: 3;
+    margin: 1rem;
+    max-width: 70%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .7);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-left: 1px solid rgba(255, 255, 255, .2);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}

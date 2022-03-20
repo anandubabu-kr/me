@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+:root {
+    --blue: #2c40fa;
+    --white: #ffffff;
+    --orange: #ff9100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Montserrat;
+    background: var(--blue);
+    color: white;
+}
+
+.centerline {
+    position: absolute;
+    background: var(--orange);
+    width: .5rem;
+    height: 100%;
+    /* for desktop */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header {
+    text-align: center;
+
+}
+
+.wrapper .time-item  {
+    display: flex;
+    padding: 0 2rem 0 2rem;
+    z-index: 2;
+}
+
+.time-item section {
+    color: black;
+    background: var(--white);
+    border: 2px solid var(--orange);
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    z-index: 2;
+    /* for desktop */
+    width: calc(50% - 3rem);
+}
+
+.time-item section::before {
+    content: '';
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    top: 1rem;
+    background: var(--orange);
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.title {}
+
+.detailes {}
+
+.right {
+    /* for desktop */
+    justify-content: flex-end;
+}
+
+.left {
+    /* for desktop */
+    justify-content: flex-start;
+}
+.left section::before{
+    right: -.5rem;
+}
+.right section::before{
+    left: -.5rem;
+}
